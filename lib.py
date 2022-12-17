@@ -136,16 +136,3 @@ def timeOf(function, weightConstrain, capacityConstrain):
     function(weightConstrain, capacityConstrain)
     x = time.time()
     return x - y
-
-
-if __name__ == '__main__':
-    size = 18
-    val = Data(size, 10, 1000, 100, 10000)
-    bb = sum(val.weight) // 4
-
-    i = 0
-    while True:
-        print(i)
-        if val.pd_with_subset(bb)[1] < val.gh4(bb)[1]:
-            break
-        i += 1
